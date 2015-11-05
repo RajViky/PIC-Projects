@@ -1,0 +1,20 @@
+main
+	Usart_Init
+	GlobalIniPRESSURE_SENSOR
+	Usart_Write
+	strlen
+	itoa
+		Div_16x16_S
+			Div_16x16_S_L
+		Div_32x32_S
+			COMFREM
+			SDIV3232L
+	pressure
+		Longint2Double
+			NRM4032
+				SETFOV32
+				FIXSIGN32
+				SETFUN32
+				RES032
+		Adc_Read
+			Delay_22us

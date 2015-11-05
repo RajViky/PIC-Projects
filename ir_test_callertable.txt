@@ -1,0 +1,15 @@
+main
+	PWM2_Init
+	PWM2_Stop
+	Sound_Play
+		Div_16x16_U
+		Div_32x32_S
+			COMFREM
+			SDIV3232L
+		Mul_32x32_U
+		Delay_Cyc
+		Get_Fosc_kHz
+	PWM2_Change_Duty
+		Mul_16x16_S
+	PWM2_Start
+	Sound_Init

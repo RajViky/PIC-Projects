@@ -1,0 +1,15 @@
+main
+	Sound_Init
+	start
+		Sound_Play
+			Get_Fosc_kHz
+			Delay_Cyc
+			Mul_32x32_U
+			Div_32x32_U
+			Div_16x16_U
+	servo_fwd_seq_1
+	servo_fwd_seq_2
+	servo_left_seq_1
+	servo_left_seq_2
+	servo_right_seq_1
+	servo_right_seq_2

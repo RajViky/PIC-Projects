@@ -1,0 +1,10 @@
+_main:
+  begin
+//lcd.c,4 :: 		TRISB = 0;                // PORTB is output
+	TRISB <- 0
+  end
+
+GlobalInilcd:
+  begin
+  end
+
